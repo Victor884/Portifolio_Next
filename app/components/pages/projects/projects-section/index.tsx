@@ -5,33 +5,45 @@ const MOCK_PROJECTS = [
     title: 'Project One',
     description:
       'A short description about project one. Built with Next.js and Tailwind.',
+    longDescription:
+      'Project One is a portfolio site built with Next.js and Tailwind. Implements responsive design, accessibility and good SEO practices.',
     techs: ['Next.js', 'TypeScript', 'Tailwind'],
     repoUrl: 'https://github.com/Victor884',
     demoUrl: '#',
+    imageUrl: '/images/project-1.png',
   },
   {
     title: 'Project Two',
     description:
       'A short description about project two. API integration and nice UI.',
+    longDescription:
+      'Project Two focuses on API integration, validation and robust error handling.',
     techs: ['React', 'Axios', 'Zod'],
     repoUrl: 'https://github.com/Victor884',
     demoUrl: '#',
+    imageUrl: '/images/project-2.png',
   },
   {
     title: 'Project Three',
     description:
       'A short description about project three. Focus on performance.',
+    longDescription:
+      'Project Three is an optimized SPA with attention to bundle size and lighthouse scores.',
     techs: ['Vite', 'Framer Motion'],
     repoUrl: 'https://github.com/Victor884',
     demoUrl: '#',
+    imageUrl: '/images/project-3.png',
   },
   {
     title: 'Project Four',
     description:
       'A short description about project four. Design and accessibility.',
+    longDescription:
+      'Project Four emphasizes design systems and accessible components.',
     techs: ['Tailwind', 'Accessibility'],
     repoUrl: 'https://github.com/Victor884',
     demoUrl: '#',
+    imageUrl: '/images/project-4.png',
   },
 ]
 

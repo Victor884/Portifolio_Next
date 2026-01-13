@@ -1,3 +1,7 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 type Experience = {
   company: string
   role: string
@@ -8,7 +12,13 @@ type Experience = {
 
 export const ExperienceCard = ({ experience }: { experience: Experience }) => {
   return (
-    <article className="bg-gray-900/60 p-5 rounded-lg border border-gray-800">
+    <motion.article
+      whileHover={{ scale: 1.02 }}
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+      className="bg-gray-900/60 p-5 rounded-lg border border-gray-800"
+    >
       <div className="flex items-start justify-between gap-4">
         <div>
           <h3 className="text-lg font-semibold">{experience.role}</h3>
@@ -33,6 +43,6 @@ export const ExperienceCard = ({ experience }: { experience: Experience }) => {
           ))}
         </div>
       )}
-    </article>
+    </motion.article>
   )
 }
