@@ -34,6 +34,17 @@ export const EducationSection = () => {
             <EducationCard key={`edu-${idx}`} education={edu} />
           ))}
         </div>
+
+        <div className="mt-6">
+          <h3 className="text-lg font-semibold">Certificações</h3>
+          <ul className="mt-2 text-gray-400 text-sm list-disc list-inside space-y-1">
+            <li>Santander Tech+ - Back-End (Ada)</li>
+            <li>Git e Versionamento (Ada)</li>
+            <li>SQL - Structured Query Language (FGV)</li>
+            <li>Databricks Fundamentals (Databricks)</li>
+            <li>Foundations: Data, Data, Everywhere (Google)</li>
+          </ul>
+        </div>
       </div>
     </section>
   )

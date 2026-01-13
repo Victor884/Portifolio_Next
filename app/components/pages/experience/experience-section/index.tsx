@@ -2,19 +2,20 @@ import { ExperienceCard } from '../experience-card'
 
 const MOCK_EXPERIENCES = [
   {
-    company: 'Acme Corp',
-    role: 'Frontend Engineer',
-    period: 'Jan 2022 - Present',
+    company: 'Banco do Brasil',
+    role: 'Analista de Dados (Estágio)',
+    period: 'Dec 2022 — Presente',
     description:
-      'Building performant interfaces and component systems using Next.js and Tailwind.',
-    techs: ['Next.js', 'TypeScript', 'Tailwind'],
-  },
-  {
-    company: 'Startup XYZ',
-    role: 'Full Stack Developer',
-    period: 'Jul 2020 - Dec 2021',
-    description: 'Worked on APIs, data modelling and responsive UIs.',
-    techs: ['Node.js', 'Express', 'PostgreSQL'],
+      'Extração, manipulação e consulta de dados utilizando SQL; criação, otimização e manutenção de mais de 10 dashboards estratégicos (reduzindo tempo de consulta em 60%); desenvolvimento de automações com Power Automate; scripts em Python (Pandas, PyAutoGUI) para ETL; processamento distribuído com Apache Spark/Databricks; identificação e correção de inconsistências em bases de dados.',
+    techs: [
+      'SQL',
+      'Power BI',
+      'Python',
+      'Pandas',
+      'Spark',
+      'Databricks',
+      'Power Automate',
+    ],
   },
 ]
 

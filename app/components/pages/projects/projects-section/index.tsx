@@ -2,48 +2,42 @@ import { ProjectCard } from '../project-card'
 
 const MOCK_PROJECTS = [
   {
-    title: 'Project One',
+    title: 'Instagram Data Analysis - EDA',
     description:
-      'A short description about project one. Built with Next.js and Tailwind.',
+      'Projeto de Análise Exploratória de Dados focado em métricas de alcance e engajamento no Instagram.',
     longDescription:
-      'Project One is a portfolio site built with Next.js and Tailwind. Implements responsive design, accessibility and good SEO practices.',
-    techs: ['Next.js', 'TypeScript', 'Tailwind'],
+      'Análise detalhada com distribuição de impressões, correlações entre interações, e análise de hashtags; principais insights incluíram correlação de 0.85 entre visitas ao perfil e ganho de seguidores.',
+    techs: [
+      'Python',
+      'Pandas',
+      'NumPy',
+      'Plotly',
+      'Matplotlib',
+      'Seaborn',
+      'WordCloud',
+    ],
     repoUrl: 'https://github.com/Victor884',
-    demoUrl: '#',
-    imageUrl: '/images/project-1.png',
   },
   {
-    title: 'Project Two',
+    title: 'PrevisaoTempoGUI',
     description:
-      'A short description about project two. API integration and nice UI.',
-    longDescription:
-      'Project Two focuses on API integration, validation and robust error handling.',
-    techs: ['React', 'Axios', 'Zod'],
+      'Aplicativo Python com interface Tkinter para consulta da previsão do tempo via API OpenWeatherMap.',
+    techs: ['Python', 'Tkinter', 'OpenWeatherMap API'],
     repoUrl: 'https://github.com/Victor884',
-    demoUrl: '#',
-    imageUrl: '/images/project-2.png',
   },
   {
-    title: 'Project Three',
+    title: 'Análise Estatística de Dados de Suicídio',
     description:
-      'A short description about project three. Focus on performance.',
-    longDescription:
-      'Project Three is an optimized SPA with attention to bundle size and lighthouse scores.',
-    techs: ['Vite', 'Framer Motion'],
+      'Projeto de análise estatística de dados públicos (2014-2018) envolvendo limpeza, visualização e testes estatísticos para identificar padrões demográficos e temporais.',
+    techs: [
+      'Python',
+      'Pandas',
+      'Matplotlib',
+      'Seaborn',
+      'SciPy',
+      'Statsmodels',
+    ],
     repoUrl: 'https://github.com/Victor884',
-    demoUrl: '#',
-    imageUrl: '/images/project-3.png',
-  },
-  {
-    title: 'Project Four',
-    description:
-      'A short description about project four. Design and accessibility.',
-    longDescription:
-      'Project Four emphasizes design systems and accessible components.',
-    techs: ['Tailwind', 'Accessibility'],
-    repoUrl: 'https://github.com/Victor884',
-    demoUrl: '#',
-    imageUrl: '/images/project-4.png',
   },
 ]
 

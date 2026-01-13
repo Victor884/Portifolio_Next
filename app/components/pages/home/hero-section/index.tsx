@@ -1,21 +1,21 @@
 import { Button } from '@/app/components/button'
 import { TechBadge } from '@/app/components/tech-badge'
-import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
+import { TbBrandGithub, TbBrandWhatsapp } from 'react-icons/tb'
 import Image from 'next/image'
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import { HiArrowNarrowRight, HiOutlineMail } from 'react-icons/hi'
 
 const MOCK_CONTACT_INFO = [
   {
+    url: 'mailto:joaovictor27032004udf@gmail.com',
+    icon: <HiOutlineMail size={18} />,
+  },
+  {
+    url: 'tel:+5561999962703',
+    icon: <TbBrandWhatsapp size={18} />,
+  },
+  {
     url: 'https://github.com/Victor884',
     icon: <TbBrandGithub size={18} />,
-  },
-  {
-    url: 'https://br.linkedin.com/in/joaomatosdev',
-    icon: <TbBrandLinkedin size={18} />,
-  },
-  {
-    url: 'https://wa.me/qr/GRHABF6NAH5QG1',
-    icon: <TbBrandWhatsapp size={18} />,
   },
 ]
 

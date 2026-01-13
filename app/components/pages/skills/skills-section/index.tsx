@@ -13,47 +13,35 @@ type LocalSkill = {
 
 const SKILLS: LocalSkill[] = [
   {
-    name: 'Next.js',
-    category: 'Frontend',
-    level: 'Advanced',
-    description: 'SSR, SSG, routing and app dir',
-  },
-  {
-    name: 'React',
-    category: 'Frontend',
-    level: 'Advanced',
-    description: 'Components, hooks and performance',
-  },
-  {
-    name: 'TypeScript',
+    name: 'Power BI',
     category: 'Tools',
     level: 'Advanced',
-    description: 'Type-safe code and definitions',
+    description: 'Dashboards e relatórios',
   },
   {
-    name: 'Tailwind',
-    category: 'Frontend',
-    level: 'Advanced',
-    description: 'Utility-first CSS',
-  },
-  {
-    name: 'Node.js',
-    category: 'Backend',
-    level: 'Intermediate',
-    description: 'APIs and server-side logic',
-  },
-  {
-    name: 'PostgreSQL',
-    category: 'Backend',
-    level: 'Intermediate',
-    description: 'Relational DB',
-  },
-  {
-    name: 'Framer Motion',
+    name: 'SQL',
     category: 'Tools',
-    level: 'Intermediate',
-    description: 'Animations and interactions',
+    level: 'Advanced',
+    description: 'Consultas e otimização',
   },
+  { name: 'MySQL', category: 'Tools', level: 'Intermediate' },
+  { name: 'Excel', category: 'Tools', level: 'Advanced' },
+  { name: 'Google Sheets', category: 'Tools', level: 'Intermediate' },
+  {
+    name: 'Python (Pandas)',
+    category: 'Tools',
+    level: 'Advanced',
+    description: 'ETL e automações',
+  },
+  { name: 'Databricks', category: 'Tools', level: 'Intermediate' },
+  { name: 'Apache Spark', category: 'Tools', level: 'Intermediate' },
+  { name: 'Power Automate', category: 'Tools', level: 'Intermediate' },
+  { name: 'Google Analytics', category: 'Tools', level: 'Intermediate' },
+  { name: 'Looker', category: 'Tools', level: 'Intermediate' },
+  { name: 'Next.js', category: 'Frontend', level: 'Advanced' },
+  { name: 'React', category: 'Frontend', level: 'Advanced' },
+  { name: 'TypeScript', category: 'Tools', level: 'Advanced' },
+  { name: 'Tailwind', category: 'Frontend', level: 'Advanced' },
 ]
 
 const CATEGORIES = ['All', 'Frontend', 'Backend', 'Tools'] as const
