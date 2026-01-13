@@ -1,16 +1,15 @@
 'use client'
 
-import Image from "next/image";
-import Link from "next/link";
-import { NavItem } from "./nav-item";
-
+import Image from 'next/image'
+import Link from 'next/link'
+import { NavItem } from './nav-item'
 
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
-//   { label: 'About', href: '/about' },
+  //   { label: 'About', href: '/about' },
   { label: 'Projects', href: '/projects' },
-//   { label: 'Contact', href: '/contact' },
-]	
+  { label: 'Contact', href: '/contact' },
+]
 
 export const Header = () => {
   return (
@@ -23,11 +22,11 @@ export const Header = () => {
             src="/images/logo.svg"
             alt="Logo GB Dev"
           />
-        </Link>	
+        </Link>
 
         <nav className="flex items-center gap-4 sm:gap-10">
-          {NAV_ITEMS.map(item => (
-            <NavItem {...item} key={item.label} />  
+          {NAV_ITEMS.map((item) => (
+            <NavItem {...item} key={item.label} />
           ))}
         </nav>
       </div>
