@@ -24,7 +24,7 @@ export const HeroSection = () => {
     <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 lg:pb-[110px]">
       <div className="container flex items-center justify-between flex-col-reverse lg:flex-row pt-32">
         <div className="w-full lg:max-w-[530px]">
-          <p className="text-emerald-400 font-mono">
+          <p className="text-primary-300 font-mono">
             Hello, I&apos;m João Victor
           </p>
           <h2 className="text-4xl font-medium mt-2">I&apos;m a Data Analyst</h2>

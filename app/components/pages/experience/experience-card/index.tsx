@@ -28,7 +28,26 @@ export const ExperienceCard = ({ experience }: { experience: Experience }) => {
       </div>
 
       {experience.description && (
-        <p className="text-sm text-gray-400 mt-3">{experience.description}</p>
+        (() => {
+          const parts = experience.description
+            .split(/;|\n/)
+            .map((s) => s.trim())
+            .filter(Boolean)
+
+          if (parts.length === 1) {
+            return (
+              <p className="text-sm text-gray-400 mt-3">{parts[0]}</p>
+            )
+          }
+
+          return (
+            <ul className="list-disc list-inside mt-3 text-gray-400 text-sm space-y-1">
+              {parts.map((p, i) => (
+                <li key={`desc-${i}`}>{p}</li>
+              ))}
+            </ul>
+          )
+        })()
       )}
 
       {experience.techs && (
@@ -36,7 +55,7 @@ export const ExperienceCard = ({ experience }: { experience: Experience }) => {
           {experience.techs.map((t) => (
             <span
               key={t}
-              className="text-emerald-400 bg-emerald-900/50 text-xs py-1 px-2 rounded"
+              className="text-primary-300 bg-primary-900/50 text-xs py-1 px-2 rounded"
             >
               {t}
             </span>

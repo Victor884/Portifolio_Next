@@ -16,7 +16,7 @@ export const DownloadResumeButton = ({ text }: { text: string }) => {
   return (
     <button
       onClick={download}
-      className="px-4 py-2 rounded bg-emerald-600 text-white hover:bg-emerald-500"
+      className="px-4 py-2 rounded bg-primary-600 text-white hover:bg-primary-500"
     >
       Download CV
     </button>

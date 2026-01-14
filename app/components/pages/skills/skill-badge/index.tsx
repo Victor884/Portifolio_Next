@@ -6,7 +6,7 @@ import { Modal } from '@/app/components/ui/modal'
 
 type Skill = {
   name: string
-  category: 'Frontend' | 'Backend' | 'Tools'
+  category: 'Frontend' | 'Backend' | 'Tools' | 'Dados'
   level?: string
   description?: string
 }
@@ -20,7 +20,7 @@ export const SkillBadge = ({ skill }: { skill: Skill }) => {
         onClick={() => setOpen(true)}
         whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.98 }}
-        className="text-emerald-400 bg-emerald-900/50 text-sm py-1 px-3 rounded-lg"
+        className="text-primary-300 bg-primary-900/50 text-sm py-1 px-3 rounded-lg"
       >
         {skill.name}
       </motion.button>

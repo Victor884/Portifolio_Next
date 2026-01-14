@@ -46,7 +46,7 @@ export const ProjectsSection = () => {
     <section className="w-full">
       <div className="container">
         <div className="max-w-3xl">
-          <p className="text-emerald-400 font-mono">Projects</p>
+          <p className="text-primary-300 font-mono">Projects</p>
           <h2 className="text-4xl font-medium mt-2">Selected Work</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
             Aqui estão alguns projetos que mostram minhas habilidades em

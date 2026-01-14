@@ -34,7 +34,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
           {project.techs.map((t) => (
             <span
               key={t}
-              className="text-emerald-400 bg-emerald-900/50 text-xs py-1 px-2 rounded"
+              className="text-primary-300 bg-primary-900/50 text-xs py-1 px-2 rounded"
             >
               {t}
             </span>
