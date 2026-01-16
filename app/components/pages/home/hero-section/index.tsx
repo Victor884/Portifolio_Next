@@ -27,14 +27,24 @@ export const HeroSection = () => {
           <p className="text-primary-300 font-mono">
             Olá, sou João Victor
           </p>
-          <h2 className="text-4xl font-medium mt-2">Sou Desenvolvedor Frontend</h2>
+          <h2 className="text-4xl font-medium mt-2">Analista de Dados</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
-            Apaixonado por criar experiências digitais incríveis, com foco em interfaces modernas e performáticas. Especialista em React, Next.js e design responsivo.
+            Analista de Dados Jr com experiência prática em análise de dados, geração de insights estratégicos e desenvolvimento de dashboards no
+            setor financeiro. Atuante na automação de processos e pipelines de dados utilizando Python, SQL, Power BI, Spark e Power Automate,
+            promovendo maior eficiência operacional e qualidade nas entregas. Proativo, com forte capacidade analítica, aprendizado rápido e excelente
+            comunicação escrita, habilitado a transformar dados complexos em informações claras e acionáveis para suporte à decisão.
           </p>
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <TechBadge key={index} name="Next.js" />
-            ))}
+              <TechBadge name="Power BI" />
+              <TechBadge name="Python" />
+              <TechBadge name="SQL" />
+              <TechBadge name="Excel" />
+              <TechBadge name="Power Automate" />
+              <TechBadge name="ETL" />
+              <TechBadge name="Erwin" />
+              <TechBadge name="Spark" />
+              <TechBadge name="Git/GitHub" />
+              <TechBadge name="IBM DB2" />
           </div>
           <div className="flex items-center mt-6 lg:mt-10 sm:gap-5 flex-col sm:flex-row">
             <Button className="w-max shadow-button">
