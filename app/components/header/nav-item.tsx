@@ -1,24 +1,21 @@
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { cn } from '@/app/lib/utilis'
 
 type NavItemProps = {
   href: string
   label: string
+  isActive?: boolean
 }
 
-export const NavItem = ({ href, label }: NavItemProps) => {
-  const pathname = usePathname()
-
-  const isActive = pathname === href
-
+export const NavItem = ({ href, label, isActive }: NavItemProps) => {
   return (
     <Link
       href={href}
       className={cn(
-        'text-gray-400 flex items-center gap-2 font-medium font-mono',
-        isActive && 'text-gray-50',
+        'text-gray-400 flex items-center gap-2 font-medium font-mono transition-colors duration-200 hover:text-[var(--accent)]',
+        isActive && 'text-[var(--accent)]',
       )}
+      aria-current={isActive ? 'page' : undefined}
     >
       <span className="text-primary-300">#</span>
       {label}

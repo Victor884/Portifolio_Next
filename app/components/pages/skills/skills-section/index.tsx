@@ -85,11 +85,11 @@ export const SkillsSection = () => {
   }, [filtered])
 
   return (
-    <section className="w-full pt-16">
+    <section id="habilidades" data-theme="habilidades" className="w-full pt-24 scroll-mt-32">
       <div className="container">
         <div className="max-w-3xl">
-          <p className="text-primary-300 font-mono">Skills</p>
-          <h2 className="text-4xl font-medium mt-2">What I use</h2>
+          <p className="text-primary-300 font-mono">Habilidades</p>
+          <h2 className="text-4xl font-medium mt-2">Tecnologias & Ferramentas</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
             Habilidades separadas por categorias — clique em uma badge para ver
             mais detalhes.

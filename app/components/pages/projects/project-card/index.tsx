@@ -25,7 +25,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', stiffness: 200, damping: 20 }}
         onClick={() => setOpen(true)}
-        className="bg-gray-900/60 p-5 rounded-lg border border-gray-800 cursor-pointer"
+        className="bg-gray-900/60 p-5 rounded-lg border border-gray-800 cursor-pointer h-full flex flex-col justify-between min-h-[200px]"
       >
         <h3 className="text-lg font-semibold">{project.title}</h3>
         <p className="text-sm text-gray-400 mt-2">{project.description}</p>

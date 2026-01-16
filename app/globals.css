@@ -3,8 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --accent-inicio: #7c3aed;
+    --accent-projetos: #0ea5e9;
+    --accent-habilidades: #22c55e;
+    --accent-curriculo: #f59e0b;
+    --accent-contato: #ef4444;
+  }
+
   body {
     @apply bg-gray-900 text-gray-100;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
 
@@ -21,7 +33,10 @@
   border-radius: 5px;
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: #7c3aed; /* primary-600 */
-  border-radius: 14px;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 } 

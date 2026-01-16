@@ -21,18 +21,15 @@ const MOCK_CONTACT_INFO = [
 
 export const HeroSection = () => {
   return (
-    <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 lg:pb-[110px]">
+    <section id="inicio" data-theme="inicio" className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 lg:pb-[110px] scroll-mt-32">
       <div className="container flex items-center justify-between flex-col-reverse lg:flex-row pt-32">
         <div className="w-full lg:max-w-[530px]">
           <p className="text-primary-300 font-mono">
-            Hello, I&apos;m João Victor
+            Olá, sou João Victor
           </p>
-          <h2 className="text-4xl font-medium mt-2">I&apos;m a Data Analyst</h2>
+          <h2 className="text-4xl font-medium mt-2">Sou Desenvolvedor Frontend</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            atque est molestias dolore explicabo. Odio, dolor eius obcaecati
-            inventore ipsam ut ex saepe nostrum rerum enim odit aliquid. Ut,
-            dolore!
+            Apaixonado por criar experiências digitais incríveis, com foco em interfaces modernas e performáticas. Especialista em React, Next.js e design responsivo.
           </p>
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
             {Array.from({ length: 5 }).map((_, index) => (

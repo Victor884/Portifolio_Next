@@ -1,4 +1,7 @@
+'use client'
+
 import { ExperienceCard } from '../experience-card'
+import { motion } from 'framer-motion'
 
 const MOCK_EXPERIENCES = [
   {
@@ -21,23 +24,49 @@ const MOCK_EXPERIENCES = [
 
 export const ExperienceSection = () => {
   return (
-    <section className="w-full pt-16">
-      <div className="container">
+    <section id="curriculo" data-theme="curriculo" className="w-full pt-24 scroll-mt-32">
+      <motion.div
+        className="container"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        viewport={{ once: true }}
+      >
         <div className="max-w-3xl">
-          <p className="text-primary-300 font-mono">Experiência</p>
-          <h2 className="text-4xl font-medium mt-2">Experiência Profissional</h2>
+          <p className="text-primary-300 font-mono">Currículo</p>
+          <h2 className="text-4xl font-medium mt-2">Experiência, formação e certificados</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
             Resumo das experiências profissionais relevantes, focando em
             tecnologias e resultados.
           </p>
         </div>
 
-        <div className="mt-8 grid gap-6">
+        <motion.div
+          className="mt-8 grid gap-6"
+          initial="hidden"
+          whileInView="show"
+          variants={{
+            hidden: {},
+            show: {
+              transition: { staggerChildren: 0.08 },
+            },
+          }}
+          viewport={{ once: true }}
+        >
           {MOCK_EXPERIENCES.map((exp, idx) => (
-            <ExperienceCard key={`exp-${idx}`} experience={exp} />
+            <motion.div
+              key={`exp-${idx}`}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                show: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <ExperienceCard experience={exp} />
+            </motion.div>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   )
 }

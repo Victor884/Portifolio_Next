@@ -180,8 +180,7 @@ export default function ResumePage() {
               <div>
                 <strong>PrevisaoTempoGUI</strong>
                 <p className="mt-1">
-                  Aplicativo Python com Tkinter para consulta da previsão do
-                  tempo via OpenWeatherMap.
+                  Aplicativo web interativo para consulta e visualização de dados meteorológicos em tempo real, utilizando a API OpenWeather. O projeto integra um pipeline ETL robusto em Python para coleta, transformação e armazenamento de dados climáticos, incluindo clima atual e previsões horárias/diárias para múltiplas cidades.
                 </p>
               </div>
 
