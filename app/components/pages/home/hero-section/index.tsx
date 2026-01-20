@@ -1,7 +1,7 @@
-import { Button } from '@/app/components/button'
 import { TechBadge } from '@/app/components/tech-badge'
 import { TbBrandGithub, TbBrandWhatsapp } from 'react-icons/tb'
 import Image from 'next/image'
+import Link from 'next/link'
 import { HiArrowNarrowRight, HiOutlineMail } from 'react-icons/hi'
 
 const MOCK_CONTACT_INFO = [
@@ -29,10 +29,7 @@ export const HeroSection = () => {
           </p>
           <h2 className="text-4xl font-medium mt-2">Analista de Dados</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
-            Analista de Dados Jr com experiência prática em análise de dados, geração de insights estratégicos e desenvolvimento de dashboards no
-            setor financeiro. Atuante na automação de processos e pipelines de dados utilizando Python, SQL, Power BI, Spark e Power Automate,
-            promovendo maior eficiência operacional e qualidade nas entregas. Proativo, com forte capacidade analítica, aprendizado rápido e excelente
-            comunicação escrita, habilitado a transformar dados complexos em informações claras e acionáveis para suporte à decisão.
+            Profissional com experiência em análise de dados, geração de insights estratégicos e desenvolvimento de dashboards para o setor financeiro. Atuação em automação de processos e construção de pipelines utilizando Python, SQL, Power BI, Spark e Power Automate, contribuindo para maior eficiência operacional e qualidade nas entregas. Perfil proativo, com forte capacidade analítica, aprendizado rápido e comunicação clara, transformando dados complexos em informações objetivas e acionáveis para apoiar a tomada de decisões.
           </p>
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
               <TechBadge name="Power BI" />
@@ -47,10 +44,13 @@ export const HeroSection = () => {
               <TechBadge name="IBM DB2" />
           </div>
           <div className="flex items-center mt-6 lg:mt-10 sm:gap-5 flex-col sm:flex-row">
-            <Button className="w-max shadow-button">
+            <Link
+              href="/#contato"
+              className="w-max shadow-button bg-primary-600 text-gray-50 px-4 py-3 flex items-center gap-2 justify-center rounded-lg font-medium hover:bg-primary-500 transition-colors"
+            >
               Entre em contato
               <HiArrowNarrowRight size={18} />
-            </Button>
+            </Link>
             <div className="text-2xl text-gray-600 flex items-center h-20 gap-3">
               {MOCK_CONTACT_INFO.map((contact, index) => (
                 <a
